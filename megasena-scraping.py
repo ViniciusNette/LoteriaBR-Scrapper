@@ -31,7 +31,7 @@ try:
 except exceptions.HTTPError as erro:
     exit(f'--- Erro {erro} na conexao HTTP com o site ---')
 
-with open('todos_os_resultados.csv', 'w') as arquivo_com_resultados:
+with open('todos_os_resultados_megasena.csv', 'w') as arquivo_com_resultados:
 
     arquivo_com_resultados.truncate(0)
     for resultado in list(saida_colunas):
